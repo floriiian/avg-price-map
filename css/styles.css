@@ -1,0 +1,57 @@
+body {
+    background-color: #ffffff;
+}
+
+.info {
+    position: absolute;
+    background-size:contain;
+    background-repeat:no-repeat;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(1);
+
+    &.active {
+        opacity: 0.5;
+        transform: scale(0);
+    }
+
+    &.hovered {
+        opacity: 0.08;
+    }
+}
+
+.map {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%
+}
+.County{
+    transition: 0.3s;
+}
+.County:hover {
+    height: auto;
+    fill: rgba(118, 54, 192, 0.37);
+    stroke: #3322;
+    stroke-width: 1;
+    transition: 0.3s;
+}
+.title{
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+
